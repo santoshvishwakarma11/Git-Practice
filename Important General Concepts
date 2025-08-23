@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------------------------------------
+To count the number of subarrays that necessarily contain the number 3 from the array: [4, 6, 7, 3, 7, 8]
+To count the number of subarrays that include a specific index i in an array of length n, the formula is:
+Count=(i+1)×(n−i)
+Why?
+There are i + 1 choices for the start of the subarray (from index 0 to i)
+There are n - i choices for the end of the subarray (from index i to n - 1)
+Every combination of start and end that includes index i is a valid subarray containing the target
+Count=(3+1)×(6−3)=4×3=12
+----------------------------------------------------------------------------------------------------------
