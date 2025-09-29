@@ -13,3 +13,9 @@ sum of first n Even numbers : n * (n + 1);
 sum of first n Odd numbers : n * n;
 
 ----------------------------------------------------------------------------------------------------------
+String s of lenght n and k , Find all possible remaining strings of length n −k after removing a continuous substring of length k.
+s : "LUL" and k = 1 then possible stirng after removing substrings of length 1 is "LL" , "LU", "UL"
+How it works :
+You can remove a substring of length k  starting at any index i such that 0 <= i <= n - k.
+For each valid index i, the remaining string is: s[0:i] + s[i+k:n] , This gives you (n - k + 1) different remaining strings.
+Number of possible remaining strings: Count = n - k + 1; and each of these strings will be of length n - k.
